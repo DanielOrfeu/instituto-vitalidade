@@ -22,7 +22,7 @@ export default function RootLayout({
       </head>
       <body className={poppins.className}>
         <ChakraProvider resetCSS>
-          <Stack bgColor={'red'} overflowX={'hidden'} gap={0}>
+          <Stack overflowX={'hidden'} gap={0}>
             <VStack>
               {children}
             </VStack>
