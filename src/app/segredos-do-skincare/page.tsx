@@ -1,37 +1,36 @@
-'use client'
+"use client"
 
-import { VStack, Text, Image, Stack, HStack, Card, CardBody, CardHeader, CardFooter, Button } from '@chakra-ui/react'
+import { VStack, Text, Image, Stack, HStack, Card, CardBody, CardHeader, CardFooter, Button, Link } from '@chakra-ui/react'
 import React from 'react'
 
-
 const enum colors {
-  '#ffffff',
-  '#d1fdfb',
-  '#10E1D5',
-  '#05BEB0',
-  '#029286',
-  '#00584F',
-  '#000000'
+  "#ffffff",
+  "#d1fdfb",
+  "#10E1D5",
+  "#05BEB0",
+  "#029286",
+  "#00584F",
+  "#000000"
 }
 
 export default function SegredosSkinCare() {
   return (
-    <Stack gap={0} background={colors['3']}>
-      <VStack p={'20px'} bgColor={colors['2']} w={'100%'} color={colors['0']} justifyContent={'center'} textAlign={'center'}>
-        <Image src={'logo.png'} width={'100px'}></Image>
-        <Text fontWeight={'bold'} fontSize={['3xl', '5xl']} color={colors['5']}>OS SEGREDOS DO</Text>
-        <Text fontWeight={'bold'} fontSize={['3xl', '6xl']}>SKINCARE:</Text>
-        <Text fontWeight={'bold'} fontSize={['xl']} color={colors['4']}>LIBERTE SUA BELEZA INTERIOR</Text>
-        <Text color={colors['5']} fontSize={['md', 'lg', 'xl']} w={['100%', '80%', '50%']} wordBreak={'break-word'}>Você deseja ter uma pele radiante e saudável? O ebook "Os Segredos do Skincare" é o guia definitivo para você alcançar o brilho que sempre desejou. Aprenda os cuidados essenciais para transformar sua rotina e revelar a beleza interior que está esperando para ser liberada.</Text>
+    <Stack gap={0} background={colors["3"]}>
+      <VStack p={"20px"} bgColor={colors["2"]} w={"100%"} color={colors["0"]} justifyContent={"center"} textAlign={"center"}>
+        <Image alt="logo da empresa" src={"logo.png"} width={"100px"}></Image>
+        <Text fontWeight={"bold"} fontSize={["3xl", "5xl"]} color={colors["5"]}>OS SEGREDOS DO</Text>
+        <Text fontWeight={"bold"} fontSize={["3xl", "6xl"]}>SKINCARE:</Text>
+        <Text fontWeight={"bold"} fontSize={["xl"]} color={colors["4"]}>LIBERTE SUA BELEZA INTERIOR</Text>
+        <Text color={colors["5"]} fontSize={["md", "lg", "xl"]} w={["100%", "80%", "50%"]} wordBreak={"break-word"}>Você deseja ter uma pele radiante e saudável? O ebook "Os Segredos do Skincare" é o guia definitivo para você alcançar o brilho que sempre desejou. Aprenda os cuidados essenciais para transformar sua rotina e revelar a beleza interior que está esperando para ser liberada.</Text>
 
-        <Text p={8} fontWeight={'bold'} fontSize={['2xl']} color={colors['5']}>Desbloqueie a verdadeira beleza que existe dentro de você com nosso ebook</Text>
+        <Text p={8} fontWeight={"bold"} fontSize={["2xl"]} color={colors["5"]}>Desbloqueie a verdadeira beleza que existe dentro de você com nosso ebook</Text>
 
-        <Button fontSize={'xl'} m={5} p={10} color={colors['0']} bgColor={colors['5']}>COMPRAR AGORA</Button>
+        <Link href="https://pay.kiwify.com.br/AazOBTs" isExternal><Button fontSize={"xl"} m={5} p={10} color={colors["0"]} bgColor={colors["5"]}>COMPRAR AGORA</Button></Link>
 
       </VStack>
 
-      <VStack p={'20px'} backgroundColor={colors['1']}>
-        <Text fontWeight={'bold'} fontSize={['2xl']} color={colors['5']}>Mais de 80 páginas com os mais diversos temas, incluindo:</Text>
+      <VStack p={"20px"} backgroundColor={colors["1"]} textAlign={"center"}>
+        <Text fontWeight={"bold"} fontSize={["2xl"]} color={colors["5"]}>Mais de 80 páginas com os mais diversos temas, incluindo:</Text>
         <Stack
           flexDirection={"row"}
           flexFlow={"wrap"}
@@ -39,61 +38,61 @@ export default function SegredosSkinCare() {
           wordBreak={"break-word"}
           p={[0, 10]}
         >
-          <Card backgroundColor={'#05BEB0'} align={'center'} w={['100%', '100%', '70%', '40%', '20%']} p={5}>
+          <Card backgroundColor={colors["3"]} align={"center"} w={["100%", "100%", "70%", "40%", "20%"]} p={5}>
             <CardHeader p={0}>
-              <Image w={['70px', '100px']} src={'alert-logo.png'} />
+              <Image alt="logo de alerta" w={["70px", "100px"]} src={"alert-logo.png"} />
             </CardHeader>
-            <CardBody textAlign={'center'}>
-              <Text color={colors['0']}>A Importância dos Cuidados com a Pele: Descubra por que cuidar da sua pele é essencial para a sua saúde e autoestima.</Text>
+            <CardBody textAlign={"center"}>
+              <Text color={colors["0"]}>A Importância dos Cuidados com a Pele: Descubra por que cuidar da sua pele é essencial para a sua saúde e autoestima.</Text>
             </CardBody>
           </Card>
-          <Card backgroundColor={'#05BEB0'} align={'center'} w={['100%', '100%', '70%', '40%', '20%']} p={5}>
+          <Card backgroundColor={colors["3"]} align={"center"} w={["100%", "100%", "70%", "40%", "20%"]} p={5}>
             <CardHeader p={0}>
-              <Image w={['70px', '100px']} src={'heart-logo.png'} />
+              <Image alt="logo referenciando cuidados" w={["70px", "100px"]} src={"heart-logo.png"} />
             </CardHeader>
-            <CardBody textAlign={'center'}>
-              <Text color={colors['0']}>Tipos de Pele e Cuidados Recomendados: Descubra seu tipo de pele e aprenda as melhores práticas de cuidados específicas para você.</Text>
+            <CardBody textAlign={"center"}>
+              <Text color={colors["0"]}>Tipos de Pele e Cuidados Recomendados: Descubra seu tipo de pele e aprenda as melhores práticas de cuidados específicas para você.</Text>
             </CardBody>
           </Card>
-          <Card backgroundColor={'#05BEB0'} align={'center'} w={['100%', '100%', '70%', '40%', '20%']} p={5}>
+          <Card backgroundColor={colors["3"]} align={"center"} w={["100%", "100%", "70%", "40%", "20%"]} p={5}>
             <CardHeader p={0}>
-              <Image w={['70px', '100px']} src={'skin-logo.png'} />
+              <Image alt="logo sobre pele" w={["70px", "100px"]} src={"skin-logo.png"} />
             </CardHeader>
-            <CardBody textAlign={'center'}>
-              <Text color={colors['0']}>Rotina Diária de Skincare para uma Pele Radiante: Receba dicas práticas e conselhos especializados para criar uma rotina diária de cuidados com a pele que proporcionará resultados impressionantes.</Text>
+            <CardBody textAlign={"center"}>
+              <Text color={colors["0"]}>Rotina Diária de Skincare para uma Pele Radiante: Receba dicas práticas e conselhos especializados para criar uma rotina diária de cuidados com a pele que proporcionará resultados impressionantes.</Text>
             </CardBody>
           </Card>
-          <Card backgroundColor={'#05BEB0'} align={'center'} w={['100%', '100%', '70%', '40%', '20%']} p={5}>
+          <Card backgroundColor={colors["3"]} align={"center"} w={["100%", "100%", "70%", "40%", "20%"]} p={5}>
             <CardHeader p={0}>
-              <Image w={['70px', '100px']} src={'alert2-logo.png'} />
+              <Image alt="segundo logo de alerta" w={["70px", "100px"]} src={"alert2-logo.png"} />
             </CardHeader>
-            <CardBody textAlign={'center'}>
-              <Text color={colors['0']}>Disbiose: Em Que Pode Afetar A Minha Pele?: Descubra como a disbiose afeta sua pele e aprenda a restabelecer o equilíbrio necessário para uma pele saudável.</Text>
+            <CardBody textAlign={"center"}>
+              <Text color={colors["0"]}>Disbiose: Em Que Pode Afetar A Minha Pele?: Descubra como a disbiose afeta sua pele e aprenda a restabelecer o equilíbrio necessário para uma pele saudável.</Text>
             </CardBody>
           </Card>
         </Stack>
       </VStack>
 
       <Stack
-        p={'20px'}
+        p={"20px"}
         flexDirection={["column", "column", "row"]}
-        justifyContent={'center'}
-        textAlign={'center'}
-        align={'center'}
+        justifyContent={"center"}
+        textAlign={"center"}
+        align={"center"}
       >
-        <Image w={['50%', '40%']} src='pc.png' />
-        <Card w={['100%', '70%', '50%']} p={'10px'}>
+        <Image alt="ilustração" w={["50%", "30%"]} src="pc.png" />
+        <Card backgroundColor={colors["5"]} w={["100%", "70%", "50%"]} p={"10px"}>
           <Text>
             E muito mais! Este ebook exclusivo é o seu passaporte para uma pele deslumbrante e uma confiança renovada. Não perca a oportunidade de transformar sua rotina de cuidados com a pele e liberar sua beleza interior. Adquira agora "Os Segredos do Skincare" e comece sua jornada em direção a uma pele radiante e saudável!
           </Text>
-          <CardFooter justifyContent={'center'}>
-            <Button p={7} color={colors['0']} bgColor={colors['5']}>EU QUERO</Button>
+          <CardFooter justifyContent={"center"}>
+            <Link href="https://pay.kiwify.com.br/AazOBTs" isExternal><Button p={7} color={colors["5"]} bgColor={colors["0"]}>EU QUERO</Button></Link>
           </CardFooter>
         </Card>
       </Stack>
 
-      <VStack p={'20px'} backgroundColor={colors['5']}>
-        <Text fontWeight={'extrabold'} fontSize={['3xl']} color={colors['1']}>Depoimentos de nossos clientes</Text>
+      <VStack p={"20px"} backgroundColor={colors["5"]}>
+        <Text fontWeight={"extrabold"} fontSize={["3xl"]} color={colors["1"]}>Depoimentos de nossos clientes</Text>
         <Stack
           flexDirection={"row"}
           flexFlow={"wrap"}
@@ -101,43 +100,43 @@ export default function SegredosSkinCare() {
           wordBreak={"break-word"}
           p={[0, 10]}
         >
-          <Card backgroundColor={colors['3']} align={'center'} w={['100%', '100%', '70%', '40%', '30%']} p={5}>
-            <CardBody textAlign={'center'}>
-              <Text color={colors['0']}>"Estou impressionada com as informações reveladas no ebook 'Os Segredos do Skincare'. Aprendi sobre a estrutura da pele, os diferentes tipos de pele e os cuidados recomendados para cada um deles. Agora, tenho uma rotina de skincare personalizada que realmente funciona. Minha pele nunca esteve tão saudável e bonita. Obrigada por compartilhar esses segredos!"</Text>
+          <Card backgroundColor={colors["3"]} align={"center"} w={["100%", "100%", "70%", "40%", "30%"]} p={5}>
+            <CardBody textAlign={"center"}>
+              <Text color={colors["0"]}>"Estou impressionada com as informações reveladas no ebook "Os Segredos do Skincare". Aprendi sobre a estrutura da pele, os diferentes tipos de pele e os cuidados recomendados para cada um deles. Agora, tenho uma rotina de skincare personalizada que realmente funciona. Minha pele nunca esteve tão saudável e bonita. Obrigada por compartilhar esses segredos!"</Text>
             </CardBody>
             <CardFooter>
-              <Text fontWeight={'bold'} color={colors['0']}>Luana, Estudante</Text>
+              <Text fontWeight={"bold"} color={colors["0"]}>Luana, Estudante</Text>
             </CardFooter>
           </Card>
-          <Card backgroundColor={colors['3']} align={'center'} w={['100%', '100%', '70%', '40%', '30%']} p={5}>
-            <CardBody textAlign={'center'}>
-              <Text color={colors['0']}>""Eu sempre lutava contra problemas de pele, até que encontrei o ebook 'Os Segredos do Skincare'. Descobri como a disbiose estava afetando minha pele e aprendi a restaurar o equilíbrio necessário. As dicas práticas e a rotina diária recomendada me ajudaram a obter uma pele radiante e livre de problemas. Recomendo este livro para todos que desejam conquistar uma pele saudável e luminosa."</Text>
+          <Card backgroundColor={colors["3"]} align={"center"} w={["100%", "100%", "70%", "40%", "30%"]} p={5}>
+            <CardBody textAlign={"center"}>
+              <Text color={colors["0"]}>""Eu sempre lutava contra problemas de pele, até que encontrei o ebook "Os Segredos do Skincare". Descobri como a disbiose estava afetando minha pele e aprendi a restaurar o equilíbrio necessário. As dicas práticas e a rotina diária recomendada me ajudaram a obter uma pele radiante e livre de problemas. Recomendo este livro para todos que desejam conquistar uma pele saudável e luminosa."</Text>
             </CardBody>
             <CardFooter>
-              <Text fontWeight={'bold'} color={colors['0']}>Mauro,  Analista de Dados</Text>
+              <Text fontWeight={"bold"} color={colors["0"]}>Mauro,  Analista de Dados</Text>
             </CardFooter>
           </Card>
-          <Card backgroundColor={colors['3']} align={'center'} w={['100%', '100%', '70%', '40%', '30%']} p={5}>
-            <CardBody textAlign={'center'}>
-              <Text color={colors['0']}>"O ebook 'Os Segredos do Skincare' me ensinou a importância da consistência nos cuidados com a pele. Antes, eu pulava etapas e não seguia uma rotina regular. Agora, percebo como isso afetava minha pele. Com a rotina diária de skincare para uma pele radiante sugerida no livro, obtive resultados surpreendentes. Minha pele está mais suave, hidratada e com um brilho natural. Estou muito feliz com os resultados!"</Text>
+          <Card backgroundColor={colors["3"]} align={"center"} w={["100%", "100%", "70%", "40%", "30%"]} p={5}>
+            <CardBody textAlign={"center"}>
+              <Text color={colors["0"]}>"O ebook "Os Segredos do Skincare" me ensinou a importância da consistência nos cuidados com a pele. Antes, eu pulava etapas e não seguia uma rotina regular. Agora, percebo como isso afetava minha pele. Com a rotina diária de skincare para uma pele radiante sugerida no livro, obtive resultados surpreendentes. Minha pele está mais suave, hidratada e com um brilho natural. Estou muito feliz com os resultados!"</Text>
             </CardBody>
             <CardFooter>
-              <Text fontWeight={'bold'} color={colors['0']}>Maria, Costureira</Text>
+              <Text fontWeight={"bold"} color={colors["0"]}>Maria, Costureira</Text>
             </CardFooter>
           </Card>
         </Stack>
       </VStack>
 
       <VStack
-        background={colors['1']}
-        justifyContent={'center'}
-        textAlign={'center'}
-        p={'20px'}
+        background={colors["1"]}
+        justifyContent={"center"}
+        textAlign={"center"}
+        p={"20px"}
       >
-        <Text color={colors['5']} fontWeight={'bold'} fontSize={['2xl', '5xl']}>COMPRA GARANTIDA</Text>
-        <Image w={['150px', '200px']} src='selo-7-dias.png' />
-        <Text color={colors['6']} fontSize={'xl'}>Oferecemos uma garantia de dinheiro de volta em 7 dias para sua tranquilidade. Invista em sua beleza agora e descubra os segredos para uma pele radiante sem nenhum risco!</Text>
-        <Button fontSize={'xl'} m={5} p={10} color={colors['0']} bgColor={colors['5']}>COMPRAR AGORA</Button>
+        <Text color={colors["5"]} fontWeight={"bold"} fontSize={["2xl", "5xl"]}>COMPRA GARANTIDA</Text>
+        <Image alt="selo de garantia 7 dias" w={["150px", "200px"]} src="selo-7-dias.png" />
+        <Text color={colors["6"]} fontSize={"xl"}>Oferecemos uma garantia de dinheiro de volta em 7 dias para sua tranquilidade. Invista em sua beleza agora e descubra os segredos para uma pele radiante sem nenhum risco!</Text>
+        <Link href="https://pay.kiwify.com.br/AazOBTs" isExternal><Button fontSize={"xl"} m={5} p={10} color={colors["0"]} bgColor={colors["5"]}>COMPRAR AGORA</Button></Link>
       </VStack>
     </Stack>
   )
