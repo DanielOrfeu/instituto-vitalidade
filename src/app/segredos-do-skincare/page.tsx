@@ -1,6 +1,6 @@
 "use client"
 
-import { VStack, Text, Image, Stack, HStack, Card, CardBody, CardHeader, CardFooter, Button, Link } from '@chakra-ui/react'
+import { VStack, Text, Image, Stack, HStack, Card, CardBody, CardHeader, CardFooter, Button, Link, Accordion, AccordionItem, AccordionButton, Box, AccordionPanel, AccordionIcon } from '@chakra-ui/react'
 import React from 'react'
 
 const enum colors {
@@ -22,13 +22,9 @@ export default function SegredosSkinCare() {
         <Text fontWeight={"bold"} fontSize={["3xl", "6xl"]}>SKINCARE:</Text>
         <Text fontWeight={"bold"} fontSize={["xl"]} color={colors["4"]}>LIBERTE SUA BELEZA INTERIOR</Text>
         <Text color={colors["5"]} fontSize={["md", "lg", "xl"]} w={["100%", "80%", "50%"]} wordBreak={"break-word"}>Você deseja ter uma pele radiante e saudável? O ebook "Os Segredos do Skincare" é o guia definitivo para você alcançar o brilho que sempre desejou. Aprenda os cuidados essenciais para transformar sua rotina e revelar a beleza interior que está esperando para ser liberada.</Text>
-
         <Text p={8} fontWeight={"bold"} fontSize={["2xl"]} color={colors["5"]}>Desbloqueie a verdadeira beleza que existe dentro de você com nosso ebook</Text>
-
         <Link href="https://pay.kiwify.com.br/AazOBTs" isExternal><Button fontSize={"xl"} m={5} p={10} color={colors["0"]} bgColor={colors["5"]}>COMPRAR AGORA</Button></Link>
-
       </VStack>
-
       <VStack p={"20px"} backgroundColor={colors["1"]} textAlign={"center"}>
         <Text fontWeight={"bold"} fontSize={["2xl"]} color={colors["5"]}>Mais de 80 páginas com os mais diversos temas, incluindo:</Text>
         <Stack
@@ -90,8 +86,7 @@ export default function SegredosSkinCare() {
           </CardFooter>
         </Card>
       </Stack>
-
-      <VStack p={"20px"} backgroundColor={colors["5"]}>
+      <VStack p={"20px"} backgroundColor={colors["5"]} textAlign="center">
         <Text fontWeight={"extrabold"} fontSize={["3xl"]} color={colors["1"]}>Depoimentos de nossos clientes</Text>
         <Stack
           flexDirection={"row"}
@@ -126,7 +121,6 @@ export default function SegredosSkinCare() {
           </Card>
         </Stack>
       </VStack>
-
       <VStack
         background={colors["1"]}
         justifyContent={"center"}
@@ -135,8 +129,71 @@ export default function SegredosSkinCare() {
       >
         <Text color={colors["5"]} fontWeight={"bold"} fontSize={["2xl", "5xl"]}>COMPRA GARANTIDA</Text>
         <Image alt="selo de garantia 7 dias" w={["150px", "200px"]} src="selo-7-dias.png" />
-        <Text color={colors["6"]} fontSize={"xl"}>Oferecemos uma garantia de dinheiro de volta em 7 dias para sua tranquilidade. Invista em sua beleza agora e descubra os segredos para uma pele radiante sem nenhum risco!</Text>
+        <Text color={colors["5"]} fontSize={"xl"}>Oferecemos uma garantia de dinheiro de volta em 7 dias para sua tranquilidade. Invista em sua beleza agora e descubra os segredos para uma pele radiante sem nenhum risco!</Text>
         <Link href="https://pay.kiwify.com.br/AazOBTs" isExternal><Button fontSize={"xl"} m={5} p={10} color={colors["0"]} bgColor={colors["5"]}>COMPRAR AGORA</Button></Link>
+      </VStack>
+
+      <VStack
+        background={colors["5"]}
+        justifyContent={"center"}
+        textAlign={"center"}
+        p={"20px"}
+      >
+        <Text color={colors["0"]} fontWeight={"bold"} fontSize={["3xl"]}>Perguntas frequentes</Text>
+        <Accordion defaultIndex={[0]} allowToggle w="100%">
+          <AccordionItem color={colors["0"]}>
+            <h2>
+              <AccordionButton justifyContent={"center"}>
+                <Text fontWeight={"bold"} fontSize={["xl"]}>
+                  Nosso site é confiável?
+                </Text>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              Sim, o nosso site é confiável. Implementamos medidas de segurança e privacidade para garantir a proteção dos dados dos nossos usuários. 
+              Utilizamos protocolos de criptografia para proteger as informações transmitidas entre o navegador do usuário e nosso servidor, o que ajuda 
+              a evitar acesso não autorizado. Além disso, seguimos as melhores práticas da indústria para proteger contra ataques cibernéticos, como 
+              firewalls e monitoramento constante.
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem color={colors["0"]}>
+            <h2>
+              <AccordionButton justifyContent={"center"}>
+                <Text fontWeight={"bold"} fontSize={["xl"]}>
+                  Onde o pagamento é processado?
+                </Text>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              O pagamento é processado pela Kiwify. A Kiwify é uma plataforma de processamento de pagamentos segura e confiável que utilizamos para 
+              facilitar as transações em nosso site. Ela oferece uma camada adicional de segurança e proteção aos dados financeiros dos nossos clientes.
+              A Kiwify utiliza tecnologias de criptografia avançada para proteger as informações sensíveis durante a transmissão. Isso significa que 
+              seus dados financeiros, como detalhes do cartão de crédito, são criptografados e armazenados de forma segura. Nós, como empresa, não 
+              armazenamos ou temos acesso direto às suas informações de pagamento.
+              A Kiwify também está em conformidade com os padrões e regulamentações de segurança da indústria de pagamentos, o que garante a proteção 
+              dos seus dados pessoais e financeiros. Ela é uma empresa reconhecida e confiável no setor de processamento de pagamentos online.
+              Caso você tenha alguma dúvida específica sobre o processamento de pagamentos ou precise de assistência durante o processo, nossa equipe 
+              de suporte está à disposição para ajudar.
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem color={colors["0"]}>
+            <h2>
+              <AccordionButton justifyContent={"center"}>
+                <Text fontWeight={"bold"} fontSize={["xl"]}>
+                  Quando vou receber meu produto?
+                </Text>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+            Assim que concluir o processo de compra, você terá acesso instantâneo ao seu produto através de uma área de membros. Após o pagamento ser processado 
+            com sucesso, você receberá um email da plataforma Kiwify com título "Pagamento aprovado" e o nome do nosso ebook. Mais informações sobre o recebimento 
+            do ebook você encontra <Link href='https://ajuda.kiwify.com.br/pt-br/article/como-acessar-o-produto-digital-que-comprei-18l0rrc/'>clicando aqui</Link>
+            </AccordionPanel>
+          </AccordionItem>
+        </Accordion>
       </VStack>
     </Stack>
   )
