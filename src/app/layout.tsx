@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Footer from '@/components/footer'
 import { ChakraProvider, Stack, VStack } from '@chakra-ui/react'
@@ -9,11 +9,6 @@ const poppins = Poppins({
   subsets: ['latin'],
 })
 
-export const metadata = {
-  title: 'Instituto Vitalidade',
-  description: 'Saúde e vida à cada página',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -21,6 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
+      <head>
+        <title>Instituto Vitalidade</title>
+        <meta name="description" content='Saúde e vida à cada página'></meta>
+      </head>
       <body className={poppins.className}>
         <ChakraProvider resetCSS>
           <Stack h={'100vh'} gap={0} bgColor={'#D1FDFB'}  w={'100vw'} overflowY={'hidden'}>
