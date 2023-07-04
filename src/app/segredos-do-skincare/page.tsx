@@ -82,7 +82,7 @@ export default function SegredosSkinCare() {
       >
         <Image alt="ilustração" w={["50%", "30%"]} src="pc.png" />
         <Card backgroundColor={colors["5"]} w={["100%", "70%", "50%"]} p={"10px"}>
-          <Text>
+          <Text color={colors["1"]}>
             E muito mais! Este ebook exclusivo é o seu passaporte para uma pele deslumbrante e uma confiança renovada. Não perca a oportunidade de transformar sua rotina de cuidados com a pele e liberar sua beleza interior. Adquira agora "Os Segredos do Skincare" e comece sua jornada em direção a uma pele radiante e saudável!
           </Text>
           <CardFooter justifyContent={"center"}>
