@@ -9,6 +9,7 @@ export default function Footer() {
             bgColor={'#06BEB0'}
             color={'white'}
             justifyContent={'center'}
+            textAlign={'center'}
         >
             <Text>Instituto Vitalidade - Saúde e vida à cada página</Text>
             <Text>CNPJ: 50.744.268/0001-06</Text>
