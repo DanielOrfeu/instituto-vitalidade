@@ -1,9 +1,8 @@
-import { HStack, Icon, Link, Text, VStack } from '@chakra-ui/react'
+import { HStack, Icon, Link, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { HiOutlineMail } from "react-icons/hi";
 import { GrInstagram } from "react-icons/gr";
-import { BiMap } from "react-icons/bi";
-import { HiPhone } from "react-icons/hi";
+import { MdWhatsapp } from "react-icons/md";
 import { Divider } from '@chakra-ui/react'
 
 export default function Footer() {
@@ -21,15 +20,28 @@ export default function Footer() {
                 justifyContent={'center'}
             >   
                 <HStack>
-                    <Icon boxSize={8} as={GrInstagram} />
-                    <Link href="https://www.instagram.com/instituto.vitalidade/" isExternal>
-                        @instituto.vitalidade
+                    <Link href="https://api.whatsapp.com/send?phone=5521976492422" isExternal>
+                        <HStack>
+                            <Icon boxSize={8} as={MdWhatsapp} />
+                            <Text>+55 21 97649-2422 </Text>
+                        </HStack>
                     </Link>
                 </HStack>
                 <HStack>
-                    <Icon boxSize={8} as={HiOutlineMail} />
+                    <Link href="https://www.instagram.com/instituto.vitalidade/" isExternal>
+                        <HStack>
+                            <Icon boxSize={8} as={GrInstagram} />
+                            <Text>@instituto.vitalidade</Text>
+                        </HStack>
+
+                    </Link>
+                </HStack>
+                <HStack>
                     <Link href="mailto:contato@institutovitalidade.com.br" isExternal>
-                        contato@institutovitalidade.com.br
+                            <HStack>
+                                <Icon boxSize={8} as={HiOutlineMail} />
+                                <Text>contato@institutovitalidade.com.br</Text>
+                            </HStack>
                     </Link>
                 </HStack>
             </HStack>

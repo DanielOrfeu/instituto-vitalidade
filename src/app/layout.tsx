@@ -9,6 +9,16 @@ const poppins = Poppins({
   subsets: ['latin'],
 })
 
+const enum colors {
+  "#ffffff",
+  "#d1fdfb",
+  "#10E1D5",
+  "#05BEB0",
+  "#029286",
+  "#00584F",
+  "#000000"
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -22,7 +32,7 @@ export default function RootLayout({
       </head>
       <body className={poppins.className}>
         <ChakraProvider resetCSS>
-          <Stack overflowX={'hidden'} gap={0}>
+          <Stack overflowX={'hidden'} gap={0} backgroundColor={colors['1']}>
             <VStack>
               {children}
             </VStack>
