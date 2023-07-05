@@ -127,9 +127,9 @@ export default function SegredosSkinCare() {
         textAlign={"center"}
         p={"20px"}
       >
-        {/* <Text color={colors["5"]} fontWeight={"bold"} fontSize={["2xl", "5xl"]}>COMPRA GARANTIDA</Text>
-        <Image alt="selo de garantia 7 dias" w={["150px", "200px"]} src="selo-7-dias.png" />
-        <Text color={colors["5"]} fontSize={"xl"}>Oferecemos uma garantia de dinheiro de volta em 7 dias para sua tranquilidade. Invista em sua beleza agora e descubra os segredos para uma pele radiante sem nenhum risco!</Text> */}
+        <Text color={colors["5"]} fontWeight={"bold"} fontSize={["2xl", "5xl"]}>OFERTA LIMITADA</Text>
+        <Text color={'gray'} fontSize={"xl"}>De R$99,90</Text>
+        <Text fontWeight={"bold"}  color={colors["5"]} fontSize={"4xl"}>Por R$59,90</Text>
         <Link href="https://pay.kiwify.com.br/AazOBTs" isExternal><Button fontSize={"xl"} m={5} p={10} color={colors["0"]} bgColor={colors["5"]}>COMPRAR AGORA</Button></Link>
       </VStack>
 
