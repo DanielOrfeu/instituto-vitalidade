@@ -3,6 +3,7 @@
 import Footer from '@/components/footer'
 import { ChakraProvider, Stack, VStack } from '@chakra-ui/react'
 import { Poppins } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700',],
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Stack overflowX={'hidden'} gap={0} backgroundColor={colors['1']}>
             <VStack>
               {children}
+              <Analytics />
             </VStack>
             <Footer></Footer>
           </Stack>
