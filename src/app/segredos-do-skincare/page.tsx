@@ -144,7 +144,7 @@ export default function SegredosSkinCare() {
           <AccordionItem color={colors["0"]}>
             <h2>
               <AccordionButton justifyContent={"center"}>
-                <Text fontWeight={"bold"} fontSize={["xl"]}>
+                <Text fontWeight={"bold"} fontSize={["lg"]}>
                   Nosso site é confiável?
                 </Text>
                 <AccordionIcon />
@@ -160,7 +160,7 @@ export default function SegredosSkinCare() {
           <AccordionItem color={colors["0"]}>
             <h2>
               <AccordionButton justifyContent={"center"}>
-                <Text fontWeight={"bold"} fontSize={["xl"]}>
+                <Text fontWeight={"bold"} fontSize={["lg"]}>
                   Onde o pagamento é processado?
                 </Text>
                 <AccordionIcon />
@@ -181,7 +181,7 @@ export default function SegredosSkinCare() {
           <AccordionItem color={colors["0"]}>
             <h2>
               <AccordionButton justifyContent={"center"}>
-                <Text fontWeight={"bold"} fontSize={["xl"]}>
+                <Text fontWeight={"bold"} fontSize={["lg"]}>
                   Quando vou receber meu produto?
                 </Text>
                 <AccordionIcon />

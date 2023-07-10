@@ -1,8 +1,6 @@
 import { HStack, Icon, Link, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
-import { HiOutlineMail } from "react-icons/hi";
-import { GrInstagram } from "react-icons/gr";
-import { MdWhatsapp } from "react-icons/md";
+import { SiWhatsapp, SiInstagram, SiMinutemailer} from "react-icons/si";
 import { Divider } from '@chakra-ui/react'
 
 export default function Footer() {
@@ -22,7 +20,7 @@ export default function Footer() {
                 <HStack>
                     <Link href="https://api.whatsapp.com/send?phone=5521976492422" isExternal>
                         <HStack>
-                            <Icon boxSize={8} as={MdWhatsapp} />
+                            <Icon boxSize={8} as={SiWhatsapp} />
                             <Text>+55 21 97649-2422 </Text>
                         </HStack>
                     </Link>
@@ -30,7 +28,7 @@ export default function Footer() {
                 <HStack>
                     <Link href="https://www.instagram.com/instituto.vitalidade/" isExternal>
                         <HStack>
-                            <Icon boxSize={8} as={GrInstagram} />
+                            <Icon boxSize={8} as={SiInstagram} />
                             <Text>@instituto.vitalidade</Text>
                         </HStack>
 
@@ -39,7 +37,7 @@ export default function Footer() {
                 <HStack>
                     <Link href="mailto:contato@institutovitalidade.com.br" isExternal>
                             <HStack>
-                                <Icon boxSize={8} as={HiOutlineMail} />
+                                <Icon boxSize={8} as={SiMinutemailer} />
                                 <Text>contato@institutovitalidade.com.br</Text>
                             </HStack>
                     </Link>
